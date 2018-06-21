@@ -116,6 +116,24 @@
             background-color: #4CAF50;
             color: white;
         }
+
+        /* Footer styling*/
+
+        .footer {
+            float: left;
+            width: 100%;
+            text-align: center;
+            border: 1px solid blue;
+            margin: 20px;
+        }
+
+        /* Form */
+
+        .Form {
+            margin: 15px;
+            padding: 5px;
+            border: 0.5px solid red;
+        }
     </style>
 </head>
 
@@ -306,6 +324,30 @@
             <td>France</td>
         </tr>
     </table>
+    <hr>
+
+    <h2>Grouping Form Data with Fieldset</h2>
+
+    <form action="/action_page.php" class="Form">
+        <fieldset>
+            <legend>Personal information:</legend>
+            First name:
+            <br>
+            <input type="text" name="firstname" value="Mickey">
+            <br> Last name:
+            <br>
+            <input type="text" name="lastname" value="Mouse">
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+            <br>
+            <input type="radio" name="gender" value="male" checked> Male
+            <br>
+            <input type="radio" name="gender" value="female"> Female
+            <br>
+            <input type="radio" name="gender" value="other"> Other
+        </fieldset>
+    </form>
 
 
 </body>
