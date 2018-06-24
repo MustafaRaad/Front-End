@@ -1,0 +1,123 @@
+/*styling the whole body*/
+
+body {
+  margin: 0;
+  /*to make the content fit on all page*/
+  background-color: lavender;
+  font-family: "Dosis", sans-serif;
+}
+/* delete underline of nav */
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  color: green;
+}
+/*styling all content of navbar*/
+
+nav ul {
+  list-style-type: none;
+  /*delete the disc style type */
+  text-align: center;
+  background-color: #303030;
+  padding: 10px;
+}
+
+/*styling single element of navbar*/
+
+nav li {
+  display: inline;
+  /*make linkes one line*/
+  padding: 25px;
+  /*Spacing*/
+}
+
+/*Links editing*/
+
+nav a {
+  text-decoration: none;
+  /*delete underline */
+  color: white;
+}
+
+/* slide show */
+
+.carousel {
+  width: 90%;
+  margin: 5%;
+}
+
+/* Add a card effect for articles means put the blocks of paragraphs side by side */
+
+.card {
+  background-color: aliceblue;
+  padding: 15px;
+  margin: 10px;
+}
+
+/* title */
+
+.tit {
+  margin: 30px;
+  border: 1px solid black;
+  outline: 1px solid red;
+  outline-offset: 15px;
+  text-align: center;
+}
+
+/* center img */
+
+.img-fluid {
+  width: 100%;
+  margin: 15px 0 15px 0;
+  border: 1px solid black;
+}
+
+/* table */
+
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Form */
+
+.Form {
+  margin: 15px;
+  padding: 5px;
+  background-color: silver;
+}
+
+/* Footer styling*/
+
+.footer {
+  float: bottom;
+  text-align: center;
+  border: 1px solid blue;
+  margin: 20px;
+  background-color: #303030;
+  color: #ddd;
+}

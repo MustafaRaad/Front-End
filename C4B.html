@@ -15,143 +15,22 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
-    <style>
-        /*styling the whole body*/
-
-        body {
-            margin: 0;
-            /*to make the content fit on all page*/
-            background-color: lavender;
-            font-family: 'Dosis', sans-serif;
-        }
-
-        /*styling all content of navbar*/
-
-        nav ul {
-            list-style-type: none;
-            /*delete the disc style type */
-            text-align: center;
-            background-color: #303030;
-            padding: 10px;
-        }
-
-        /*styling single element of navbar*/
-
-        nav li {
-            display: inline;
-            /*make linkes one line*/
-            padding: 25px;
-            /*Spacing*/
-        }
-
-        /*Links editing*/
-
-        nav a {
-            text-decoration: none;
-            /*delete underline */
-            color: white;
-
-        }
-
-        /* slide show */
-
-        .carousel {
-            width: 90%;
-            margin: 5%;
-        }
-
-
-        /* Add a card effect for articles means put the blocks of paragraphs side by side */
-
-        .card {
-            background-color: aliceblue;
-            padding: 15px;
-            margin: 10px;
-        }
-
-        /* title */
-
-        .tit {
-            margin: 30px;
-            border: 1px solid black;
-            outline: 1px solid red;
-            outline-offset: 15px;
-            text-align: center;
-        }
-
-        /* center img */
-
-        .img-fluid {
-            width: 100%;
-            margin: 15px 0 15px 0;
-            border: 1px solid black;
-        }
-
-        /* table */
-
-        #customers {
-            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        #customers td,
-        #customers th {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-
-        #customers tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-
-        #customers tr:hover {
-            background-color: #ddd;
-        }
-
-        #customers th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: left;
-            background-color: #4CAF50;
-            color: white;
-        }
-
-
-        /* Form */
-
-        .Form {
-            margin: 15px;
-            padding: 5px;
-            background-color: silver
-        }
-
-        /* Footer styling*/
-
-        .footer {
-            float: bottom;
-            text-align: center;
-            border: 1px solid blue;
-            margin: 20px;
-            background-color: #303030;
-            color: #ddd;
-        }
-    </style>
+    <link rel="stylesheet" href="css/myCss.css">
 </head>
 
 <body>
     <!-- navbar -->
 
-    <nav>
+    <nav class="navi">
         <ul>
             <li>
-                <a href="">P1</a>
+                <a href="C4B.html">Home</a>
             </li>
             <li>
-                <a href="">P2</a>
+                <a href="Statistics.html">Statistics</a>
             </li>
             <li>
-                <a href="">P3</a>
+                <a href="Register.html">Register</a>
             </li>
         </ul>
     </nav>
@@ -189,8 +68,10 @@
         <div class="card">
             <img class="card-img-top" src="img/img.jpg" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">Card title that wraps to a new line</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content
+                <h5 class="card-title"><abbr title="Cascading Styling Sheets">CSS</abbr></h5>
+                <p class="card-text">This is a longer card M
+                    <br>
+                    with supporting text below as a natural lead-in to additional content. This content
                     is a little bit longer.</p>
             </div>
         </div>
@@ -209,7 +90,7 @@
             <img class="card-img-top" src="img/img.jpg" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><del> card has supporting text below as a natural lead-in to additional content.</del></p>
                 <p class="card-text">
                     <small class="text-muted">Last updated 3 mins ago</small>
                 </p>
@@ -217,7 +98,7 @@
         </div>
         <div class="card bg-primary text-white text-center p-3">
             <blockquote class="blockquote mb-0">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+                <p dir ="rtl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
                 <footer class="blockquote-footer">
                     <small>
                         Someone famous in
@@ -260,96 +141,8 @@
             </div>
         </div>
     </div>
-    <!-- /* title */ -->
-    <h2 class="tit">
-        <code>Team Pro</Code>
-    </h2>
 
-    <!-- /* center img */ -->
-    <img src="img/img.jpg" class="img-fluid" alt="Responsive image">
-    <hr>
-    <!-- table -->
-    <table id="customers">
-        <tr>
-            <th>Company</th>
-            <th>Contact</th>
-            <th>Country</th>
-        </tr>
-        <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
-        </tr>
-        <tr>
-            <td>Berglunds snabbköp</td>
-            <td>Christina Berglund</td>
-            <td>Sweden</td>
-        </tr>
-        <tr>
-            <td>Centro comercial Moctezuma</td>
-            <td>Francisco Chang</td>
-            <td>Mexico</td>
-        </tr>
-        <tr>
-            <td>Ernst Handel</td>
-            <td>Roland Mendel</td>
-            <td>Austria</td>
-        </tr>
-        <tr>
-            <td>Island Trading</td>
-            <td>Helen Bennett</td>
-            <td>UK</td>
-        </tr>
-        <tr>
-            <td>Königlich Essen</td>
-            <td>Philip Cramer</td>
-            <td>Germany</td>
-        </tr>
-        <tr>
-            <td>Laughing Bacchus Winecellars</td>
-            <td>Yoshi Tannamuri</td>
-            <td>Canada</td>
-        </tr>
-        <tr>
-            <td>Magazzini Alimentari Riuniti</td>
-            <td>Giovanni Rovelli</td>
-            <td>Italy</td>
-        </tr>
-        <tr>
-            <td>North/South</td>
-            <td>Simon Crowther</td>
-            <td>UK</td>
-        </tr>
-        <tr>
-            <td>Paris spécialités</td>
-            <td>Marie Bertrand</td>
-            <td>France</td>
-        </tr>
-    </table>
-    <hr>
-
-    <h2>Grouping Form Data with Fieldset</h2>
-
-    <form action="/action_page.php" class="Form">
-        <fieldset>
-            <legend>Personal information:</legend>
-            First name:
-            <br>
-            <input type="text" name="firstname" value="Mickey">
-            <br> Last name:
-            <br>
-            <input type="text" name="lastname" value="Mouse">
-            <br>
-            <br>
-            <input type="submit" value="Submit">
-            <br>
-            <input type="radio" name="gender" value="male" checked> Male
-            <br>
-            <input type="radio" name="gender" value="female"> Female
-            <br>
-            <input type="radio" name="gender" value="other"> Other
-        </fieldset>
-    </form>
+  
 
     <footer class="footer">
         <h3>All rights recieved for TEAM PROFESSIONAL</h3>
